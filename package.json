@@ -12,7 +12,8 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "prepublishOnly": "npm run build",
-    "test:all": "jest --coverage --bail"
+    "test:all": "jest --coverage --bail",
+    "test:staged": "node jest.staged.js"
   },
   "files": [
     "dist"
@@ -27,7 +28,8 @@
       "prettier --write"
     ],
     "*.ts?(x)": [
-      "prettier --parser=typescript --write"
+      "prettier --parser=typescript --write",
+      "npm run test:staged"
     ]
   },
   "dependencies": {
