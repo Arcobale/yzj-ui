@@ -21,9 +21,19 @@ nav:
 <!-- 可以通过code加载示例代码，dumi会帮我们做解析 -->
 <code src="./demo/base.tsx">基础用法</code>
 
-## APi
+## API
 
-<!-- 会生成api表格 -->
-| 属性 | 类型                   | 默认值   | 必填 | 说明 |
-| ---- | ---------------------- | -------- | ---- | ---- |
-| type | 'primary' | 'default' | 'default |  false  | 按钮类型 |
+### Attributes
+| 属性名 | 说明                   | 类型   | 默认值 |
+| ---- | ---------------------- | -------- | ---- |
+| type | 按钮类型 | 'default' \| 'primary' \| 'danger' \| 'description' | 'default'  |
+| size | 按钮大小 | 'large' \| 'middle' \| 'small' | 'middle' |
+| shape | 按钮形状 | 'default' \| 'plain' \| 'circle' \| 'round' | 'default' |
+| disabled | 按钮禁用状态 | boolean | false |
+| shape | 按钮形状 | 'default' \| 'plain' \| 'circle' \| 'round' | 'default' |
+| loading | 按钮加载状态 | boolean | false |
+
+### Exposes
+| 方法名 | 说明 | 类型 |
+| --- | --- | --- |
+| click | 点击按钮时的回调 | 
